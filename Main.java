@@ -17,16 +17,16 @@ class Main {
     } while (input.hasNextLine());
 
     do{
-      String wordCountString=wordScanner.next();
+     String wordCountString=wordScanner.next();
       charCount=charCount+wordCountString.length();
       wordCount++;
-    }while(input.hasNext());
+    }while(wordScanner.hasNext());
     copyOfBeeMovie.println(charCount);
     copyOfBeeMovie.println(lineCount);
     copyOfBeeMovie.println(wordCount);
-    System.out.println(charCount);
-    System.out.println(lineCount);
-    System.out.println(wordCount);
+    System.out.println("Character count is "+charCount);
+    System.out.println("Line count is "+lineCount);
+    System.out.println("Word count is "+wordCount);
     input.close();
     copyOfBeeMovie.close();
     wordScanner.close();
